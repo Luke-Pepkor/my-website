@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Welcome to Our Local</title>
+</head>
+<body>
+  <!--Desktop Navigation-->
+  <header class="header">
+    <a href="index.html">
+      <img src="assets/logo.svg" class="logo">
+    </a>
+
+    <nav class="desktop-navigation">
+      <a href="index.html">Home</a>
+
+      <div id="dropdown-menu">
+        <a class="dropdown-toggle" href="#">Our Partners</a>
+        <ul class="dropdown">
+          <li><a href="#">Woolworths</a></li>
+          <li><a href="#">Lellos deli</a></li>
+          <li><a href="#">Sparta Butchers</a></li>
+          <li><a href="#">Tightline Fisheries</a></li>
+        </ul>
+      </div>
+
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="save-for-later.html">My Files</a>
+
+      <button type="button" class="book-table">Book a Table</button>
+
+    </nav>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!--Booking table display-->
+
+    <div id="booking-table" class="modal">
+      <div id="booking-table-content">
+        <span class="close">&times;</span>
+        <form id="booking-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+    
+          <label for="date">Date:</label>
+          <input type="date" id="date" required>
+    
+          <label for="time">Time:</label>
+          <div id="time-slots">
+            <input type="radio" id="time-slot-1" name="time" value="12:00 PM" required>
+            <label for="time-slot-1">Lunch (12:00 PM)</label>
+            <br>
+            <input type="radio" id="time-slot-2" name="time" value="6:00 PM" required>
+            <label for="time-slot-2">Dinner (6:00 PM)</label>
+          </div>
+    
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" required>
+    
+          <button type="submit">Book Table</button>
+        </form>
+      </div>
+    </div>
+
+  </header>
+  <!--Mobile navigation-->
+  <nav class="mobile-menu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <div id="dropdown-menu">
+        <a class="dropdown-toggle" href="#">Our Partners</a>
+        <ul class="dropdown">
+          <li><a href="#">Woolworths</a></li>
+          <li><a href="#">Lellos deli</a></li>
+          <li><a href="#">Sparta Butchers</a></li>
+          <li><a href="#">Tightline Fisheries</a></li>
+        </ul>
+      </div>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="save-for-later.html">My Files</a></li>
+      <li><button type="button" class="book-table">Book a Table</button></li>
+    </ul>
+  </nav>
+  
+  <!--Header section-->
+  <section class="full-width-container">
+    <div class="intro">
+      <h1 class="intro-h1">Our Local</h1>
+      <p> We are a vibrant restaurant nestled in the heart of Cape Town. We offer a warm and welcoming atmosphere where you can savor the soul of South African cuisine. Our menu features a delicious array of traditional dishes prepared with fresh, seasonal ingredients.</p>
+      <div class="cta-buttons">
+        <button type="button" class="book-table">Book a Table</button>
+        <button><a href="menu.html" class="menu-btn">View Our menu</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!--Main content-->
+<section class="main-content-container">
+  <div class="content-grid">
+    <div class="content-grid-text">
+      <h2>Established in 2024</h2>
+      <p class="content-grid-p-bold">Our Local has become a popular venue in Cape Town’s thriving CBD, attracting local foodies and inquisitive travellers searching for the best seafood the city has to offer.</p>
+      <button type="button" id="show" class="info-btn">More Info</button>
+      <button type="button" id="hide" class="info-btn">Less Info</button>
+      <p class="content-grid-p content-grid-p-hidden-1">At Our Local, our core philosophy is centred around quality and sustainability. That’s why we only use fresh, locally sourced and seasonal produce in each of our dishes. As proud supporters of the South African Sustainable Seafood Initiative (SASSI), we exclusively serve fish which has been landed on South Africa shores, and never Red Listed Fish.</p>
+
+    </div>
+      <div class="content-grid-img">
+        <img src="assets/grid-img-1.jpg" data-hover-src="assets/grid-img-2.jpg" data-original-src="assets/grid-img-1.jpg"  class="grid-img">
+        <button class="save-btn">Save</button>
+      </div>
+     
+  </div>
+
+  <div class="content-grid">
+      <div class="content-grid-img">
+        <img src="assets/grid-img-3.png" data-hover-src="assets/grid-img-4.jpg" data-original-src="assets/grid-img-2.jpg"  class="grid-img">
+        <button class="save-btn">Save</button>
+      </div>
+      <div class="content-grid-text">
+      <h2>Local is Lekker!</h2>
+      <p class="content-grid-p-bold">Contemporary interiors, this is the perfect spot to indulge in the best seafood Cape Town has to offer.</p>
+      <button type="button" id="show-more" class="info-btn">More Info</button>
+      <button type="button" id="hide-more" class="info-btn">Less Info</button>
+      <p class="content-grid-p content-grid-p-hidden-2">At Our Local, our core philosophy is centred around quality and sustainability. That’s why we only use fresh, locally sourced and seasonal produce in each of our dishes. As proud supporters of the South African Sustainable Seafood Initiative (SASSI), we exclusively serve fish which has been landed on South Africa shores, and never Red Listed Fish.</p>
+    </div>
+  </div>
+</section>
+
+<!--Testimononial section-->
+<section class="secondary-color">
+<div class="testimonial-wrapper">
+  <button class="control-btn" onclick="changeSlide(-1)">&#10094;</button>
+    <div class="testimonial-container">
+        <div class="testimonial-slide active">
+            <p class="testimonial-text">"Wow! Our Local is a hidden gem I can't recommend enough. The atmosphere is warm and inviting, and the staff were incredibly friendly and attentive. But the real star of the show is the food! I had the Steak, and it was absolutely divine. The flavors were complex and delicious, and the portion size was perfect. I can't wait to go back and try something new!"</p>
+            <p class="testimonial-author">- John Doe</p>
+        </div>
+        <div class="testimonial-slide">
+            <p class="testimonial-text">"We recently had dinner at Our Local to celebrate a special occasion, and it was a truly memorable experience. The Bobotie was outstanding, the best I've ever had! The use of fragrant spices and dried fruit created a flavor explosion in every bite. We also loved the Pumkin fritta, which perfectly complemented the richness of the Bobotie. The service was excellent, and our waiter made sure our evening was perfect. We will definitely be back!"</p>
+            <p class="testimonial-author">- Jane Smith</p>
+        </div>
+        <div class="testimonial-slide">
+            <p class="testimonial-text">"Looking for a taste of authentic South African cuisine? Look no further than Our local! My friends and I shared a variety of dishes, including the Malva Pudding for dessert, and everything was delicious. The portions are generous, and the prices are very reasonable. The restaurant itself is charming and has a great vibe. We had a wonderful evening, and I highly recommend this restaurant to anyone visiting Cape Town"</p>
+            <p class="testimonial-author">- Emily Johnson</p>
+        </div>  
+      </div>
+  <button class="control-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+</div>
+</section>
+
+
+<!--Footer-->
+
+<footer class="footer">
+  <div class="social-icons">
+      <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.729 0-1.325.597-1.325 1.333v21.334c0 .736.596 1.333 1.325 1.333h11.494v-9.294h-3.123v-3.624h3.123v-2.671c0-3.097 1.894-4.779 4.659-4.779 1.325 0 2.463.099 2.795.143v3.243l-1.918.001c-1.504 0-1.795.714-1.795 1.763v2.307h3.588l-.467 3.624h-3.121v9.294h6.117c.729 0 1.325-.597 1.325-1.333v-21.334c0-.736-.596-1.333-1.325-1.333z"/></svg>
+      </a>
+      <a href="https://x.com/" aria-label="Twitter" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.611 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.917 2.202-4.917 4.917 0 .385.045.761.127 1.122-4.083-.205-7.702-2.162-10.126-5.138-.422.722-.664 1.561-.664 2.457 0 1.695.864 3.189 2.178 4.066-.803-.026-1.561-.247-2.228-.616v.062c0 2.368 1.684 4.342 3.918 4.788-.41.111-.84.171-1.285.171-.314 0-.619-.031-.917-.088.63 1.953 2.445 3.376 4.604 3.416-1.685 1.32-3.809 2.107-6.114 2.107-.398 0-.79-.023-1.175-.068 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14.004-7.496 14.004-13.986 0-.213-.005-.425-.014-.637.961-.694 1.797-1.562 2.457-2.549z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
+        <svg width="24px" height="24px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+              <g transform="translate(-340.000000, -7439.000000)" fill="#fff">
+                  <g transform="translate(56.000000, 160.000000)">
+                      <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792">
+      
+                </path>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </a>
+  </div>
+  <p>&copy; 2024 Our Local CPT. All rights reserved.</p>
+</footer>
+
+</body>
+<script src="scripts.js"></script>
+</html>
