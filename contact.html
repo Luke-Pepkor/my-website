@@ -114,17 +114,15 @@
         <h2>Contact Us</h2>
         <form id="contact-form" action="#" method="post">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="email">Email</label>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z 
+   ]+" title="Please enter only letters and spaces"> <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
-          
+  
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone">
-          
-          <label for="message">Message</label>
+          <input type="tel" id="phone" name="phone"
+   required pattern="[0-9]+" title="Please enter only numbers"> <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
-          
+  
           <button type="submit">Submit</button>
         </form>
       </div>
